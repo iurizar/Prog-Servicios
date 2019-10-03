@@ -32,11 +32,11 @@ namespace calculadoraProceso
                 { 
                     writer.WriteLine(opcion);
                     writer.Flush();
-                    Console.WriteLine("Introduzca el primer operando: ");
+                    Console.Write("Introduzca el primer operando: ");
                     var operando1 = Console.ReadLine();
                     writer.WriteLine(operando1);
                     writer.Flush();
-                    Console.WriteLine("Introduzca el segundo operando: ");
+                    Console.Write("Introduzca el segundo operando: ");
                     var operando2 = Console.ReadLine();
                     writer.WriteLine(operando2);
                     writer.Flush();
@@ -68,6 +68,7 @@ namespace calculadoraProceso
             Console.WriteLine("2 Resta");
             Console.WriteLine("3 Multiplicación");
             Console.WriteLine("(-1) salir");
+            Console.Write("Introduce la operación a realizar: ");
         }
     }
 }
