@@ -37,13 +37,14 @@ namespace calculadoraServidor
                             writer.Flush();
                             break;
                         case 2:
-                            Console.WriteLine("Opción 2");
+                            resultado = op1 - op2;
+                            writer.WriteLine(resultado);
+                            writer.Flush();
                             break;
                         case 3:
-                            Console.WriteLine("Opción 3");
-                            break;
-                        case -1:
-                            Console.WriteLine("Cerrando programa");
+                            resultado = op1 * op2;
+                            writer.WriteLine(resultado);
+                            writer.Flush();
                             break;
                     }
                 }
