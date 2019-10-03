@@ -40,7 +40,7 @@ namespace calculadoraProceso
                     var operando2 = Console.ReadLine();
                     writer.WriteLine(operando2);
                     writer.Flush();
-                    Console.WriteLine("Resultado : {0}", reader.ReadLine());
+                    Console.WriteLine("Resultado: {0}", reader.ReadLine());
                     writer.Flush();
                 }
             } while (opcion != -1);
