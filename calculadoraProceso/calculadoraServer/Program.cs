@@ -1,7 +1,6 @@
 ﻿using System;
 using System.IO;
 using System.IO.Pipes;
-using System.Threading.Tasks;
 
 namespace calculadoraServidor
 {
@@ -51,7 +50,7 @@ namespace calculadoraServidor
             }
             catch (Exception e)
             {
-                Console.WriteLine("Error de conexión. Apagando servidor.");
+                Console.WriteLine("Error: " + e.Message);
             }
 
 
